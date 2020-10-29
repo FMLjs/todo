@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="static/style/Challenge2Style.css" />
+    <link rel="icon" href="..\Challenge2\static\picture\todoicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <a href="index.html" style="text-decoration: none">
+      <div class="logo">
+        <h1 style="color: #5ffbf1; font-size: 40px">To Do</h1>
+        <img src="static/picture/todo.png" alt="" width="100" height="100" />
+      </div>
+    </a>
+    <div class="container">
+      <div class="grtng" id="greetings"></div>
+      <a href="pages/ToDoCreation.html">
+        <button class="to-do-btn" id="addToDo">Новый To Do</button></a
+      >
+      <div id="to-do-search" class="search-style">
+        <input
+          type="text"
+          id="to-do-input"
+          onkeyup="searchToDo()"
+          placeholder="Искать To Do.."
+          style="width: 500px; height: 35px"
+        />
+        <input type="checkbox" id="only-to-do" onchange="showCheckedToDos()" />
+        <label for="only-to-do"> Не выполнено</label>
+        <ul id="to-do-ul" class="to-do-list"></ul>
+      </div>
+      <div>
+        <button class="to-do-btn" id="to-do-clear">Очистить</button>
+      </div>
+    </div>
+    <script type="module" src="scripts\showToDo.js"></script>
+  </body>
+</html>

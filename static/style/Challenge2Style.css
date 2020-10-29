@@ -1,0 +1,73 @@
+.container {
+    text-align: center;
+    color: #F092C8;
+
+}
+.grtng{
+    margin: 0;
+    overflow: hidden;
+    font-size: 30px;
+    height: 40px;
+}
+
+.to-do-btn {
+    background-color: #F092C8;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin: 40px;
+}
+
+.search-style button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+.completed {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.tbd {
+    color: #F092C8;
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #f092c8, #d986bf, #c37ab5, #ac6eab, #9663a0, #896caf, #7976bb, #647fc4, #42a0e0, #0cc0f0, #1cdff5, #5ffbf1);
+}
+
+.to-do-list li {
+    text-align: left;
+    list-style-type: none;
+    font-size: 30px;
+}
+
+.logo {
+    display: flex;
+    width: 300px;
+}
+
+.ddln input {
+    width: 40px;
+}
+
+#wrapper {
+    display: flex;
+}
+
+#left {
+    margin-left: 250px;
+    flex: 0 0 65%;
+    max-width: 900px;
+    word-wrap: break-word;
+}
+
+#right {
+    margin-right: 180px;
+    flex: 1;
+}
