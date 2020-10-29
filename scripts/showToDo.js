@@ -139,6 +139,7 @@ function addToPage(toDoOb) {
     btnEdt.addEventListener('click', () => {
         localStorage.setItem('edit', JSON.stringify(toDoOb));
         window.location.href = "../pages/toDoCreation.html";
+        return false;
     });
     let btns = document.createElement('div');
     btns.setAttribute('id', 'right');
