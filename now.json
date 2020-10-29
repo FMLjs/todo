@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "name": "todo",
+    "builds": [
+        {
+            "src": "*.js",
+            "use": "@now/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/index.js"
+        }
+
+    ]
+}
