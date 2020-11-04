@@ -21,7 +21,7 @@ const notify = (toDoOb) => {
 
     notification.onclick = () => {
         localStorage.setItem('edit', JSON.stringify(toDoOb));
-        window.location.href = ('pages/toDoCreation.html');
+        window.location.href = ('pages/ToDoCreation.html');
     }
 }
 
