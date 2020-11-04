@@ -107,7 +107,7 @@ function addToPage(toDoOb) {
     a.appendChild(document.createTextNode(toDoOb.value.length > 52 ? toDoOb.value.slice(0, 55) + '...' : toDoOb.value));
     a.addEventListener('click', () => {
         localStorage.setItem('edit', JSON.stringify(toDoOb));
-        window.location = ('../pages/toDoCreation.html');
+        window.location.href = ('/../pages/toDoCreation.html');
     });
     li.appendChild(a);
     colorize(toDoOb, a);
@@ -138,7 +138,7 @@ function addToPage(toDoOb) {
     btnEdt.style.color = 'green';
     btnEdt.addEventListener('click', () => {
         localStorage.setItem('edit', JSON.stringify(toDoOb));
-        window.location = "../pages/toDoCreation.html";
+        window.location.href = "/../pages/toDoCreation.html";
     });
     let btns = document.createElement('div');
     btns.setAttribute('id', 'right');
