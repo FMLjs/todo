@@ -103,11 +103,11 @@ function addToPage(toDoOb) {
     let ul = document.querySelector('#to-do-ul');
     let li = document.createElement('li');
     let a = document.createElement('a');
-    a.setAttribute('href', '#');
     a.appendChild(document.createTextNode(toDoOb.value.length > 52 ? toDoOb.value.slice(0, 55) + '...' : toDoOb.value));
+    a.href = '../pages/toDoCreation.html';
+
     a.addEventListener('click', () => {
         localStorage.setItem('edit', JSON.stringify(toDoOb));
-        window.location.href = ('/../pages/toDoCreation.html');
     });
     li.appendChild(a);
     colorize(toDoOb, a);
@@ -138,7 +138,7 @@ function addToPage(toDoOb) {
     btnEdt.style.color = 'green';
     btnEdt.addEventListener('click', () => {
         localStorage.setItem('edit', JSON.stringify(toDoOb));
-        alert("aue", window.location.href)
+        alert("lox", window.location.href)
         window.location.href = "/pages/toDoCreation.html";
     });
     let btns = document.createElement('div');
