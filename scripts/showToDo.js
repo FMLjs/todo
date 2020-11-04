@@ -138,7 +138,8 @@ function addToPage(toDoOb) {
     btnEdt.style.color = 'green';
     btnEdt.addEventListener('click', () => {
         localStorage.setItem('edit', JSON.stringify(toDoOb));
-        window.location.href = "/../pages/toDoCreation.html";
+        alert(window.location.href)
+        window.location.href = "/pages/toDoCreation.html";
     });
     let btns = document.createElement('div');
     btns.setAttribute('id', 'right');

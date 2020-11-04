@@ -1,9 +1,10 @@
 .container {
     text-align: center;
     color: #F092C8;
-
+    height: auto;
 }
-.grtng{
+
+.grtng {
     margin: 0;
     overflow: hidden;
     font-size: 30px;
@@ -39,6 +40,7 @@
 
 body {
     background-image: linear-gradient(to right bottom, #f092c8, #d986bf, #c37ab5, #ac6eab, #9663a0, #896caf, #7976bb, #647fc4, #42a0e0, #0cc0f0, #1cdff5, #5ffbf1);
+    overflow-x: hidden;
 }
 
 .to-do-list li {
@@ -70,4 +72,8 @@ body {
 #right {
     margin-right: 180px;
     flex: 1;
+}
+
+#creationForm {
+    height: 100%;
 }

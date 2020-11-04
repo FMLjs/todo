@@ -1,36 +1,44 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../static/style/Challenge2Style.css">
-</head>
+    <link rel="stylesheet" href="../static/style/Challenge2Style.css" />
+  </head>
 
-<body>
+  <body>
     <form id="creationForm">
-        <a href="../index.html" style="text-decoration: none;">
-            <div class="logo">
-                <h1 style="color: #5FFBF1; font-size: 40px;">To Do</h1>
-                <img src="..\static\picture\todo.png" alt="" width="100" height="100">
-            </div>
-        </a>
-        <div class="container">
-            <h1 style="color: #5FFBF1; font-size: 40px;">Создать To Do</h1>
-            <hr>
-            <label for="Name"><b>Название</b></label>
-            <input type="text" placeholder="Введите название To Do" name="todo-name" id="todo-name" required>
-            <br>
-            <label for="ddln"><b>Срок выполнения</b></label>
-            <input id="today" type="date" min="2017-08-15">
-            <hr>
-            <p id="error" style="color: red;"></p>
-            <button type="submit" id="createbtn" class="to-do-btn">Ок</button>
-            <button class="to-do-btn" id="cancel">Отмена</button>
+      <a href="../index.html" style="text-decoration: none">
+        <div class="logo">
+          <h1 style="color: #5ffbf1; font-size: 40px">To Do</h1>
+          <img
+            src="..\static\picture\todo.png"
+            alt=""
+            width="100"
+            height="100"
+          />
         </div>
-        <script type="module" src="..\scripts\createToDo.js"></script>
+      </a>
+      <div class="container">
+        <h1 style="color: #5ffbf1; font-size: 40px">Создать To Do</h1>
+        <hr />
+        <label for="Name"><b>Название</b></label>
+        <input
+          type="text"
+          placeholder="Введите название To Do"
+          name="todo-name"
+          id="todo-name"
+          required
+        />
+        <br />
+        <label for="ddln"><b>Срок выполнения</b></label>
+        <input id="today" type="date" min="2017-08-15" />
+        <hr />
+        <p id="error" style="color: red"></p>
+        <button type="submit" id="createbtn" class="to-do-btn">Ок</button>
+        <button class="to-do-btn" id="cancel">Отмена</button>
+      </div>
+      <script type="module" src="..\scripts\createToDo.js"></script>
     </form>
-
-</body>
-
+  </body>
 </html>
