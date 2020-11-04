@@ -103,12 +103,12 @@ function addToPage(toDoOb) {
     let ul = document.querySelector('#to-do-ul');
     let li = document.createElement('li');
     let a = document.createElement('a');
-    a.setAttribute('href', '#');
     a.appendChild(document.createTextNode(toDoOb.value.length > 52 ? toDoOb.value.slice(0, 55) + '...' : toDoOb.value));
+    a.href = '../pages/toDoCreation.html';
+
     a.addEventListener('click', () => {
         localStorage.setItem('edit', JSON.stringify(toDoOb));
     });
-    a.href = '../pages/toDoCreation.html';
     li.appendChild(a);
     colorize(toDoOb, a);
 
