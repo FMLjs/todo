@@ -104,7 +104,7 @@ function addToPage(toDoOb) {
     let li = document.createElement('li');
     let a = document.createElement('a');
     a.appendChild(document.createTextNode(toDoOb.value.length > 52 ? toDoOb.value.slice(0, 55) + '...' : toDoOb.value));
-    a.href = '../pages/toDoCreation.html';
+    a.href = '../pages/ToDoCreation.html';
 
     a.addEventListener('click', () => {
         localStorage.setItem('edit', JSON.stringify(toDoOb));
@@ -138,8 +138,8 @@ function addToPage(toDoOb) {
     btnEdt.style.color = 'green';
     btnEdt.addEventListener('click', () => {
         localStorage.setItem('edit', JSON.stringify(toDoOb));
-        alert("lox", window.location.href)
-        window.location.href = "/pages/toDoCreation.html";
+        alert(window.location.href)
+        window.location.href = "/pages/ToDoCreation.html";
     });
     let btns = document.createElement('div');
     btns.setAttribute('id', 'right');
